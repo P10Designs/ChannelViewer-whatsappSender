@@ -1,0 +1,31 @@
+{
+  "name": "ChannelViewer-whatsappSender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P10Designs/ChannelViewer-whatsappSender.git"
+  },
+  "keywords": [],
+  "author": "P10Designs <designs.p10@gmail.com> (http://p10designs.store/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/P10Designs/ChannelViewer-whatsappSender/issues"
+  },
+  "homepage": "https://github.com/P10Designs/ChannelViewer-whatsappSender#readme",
+  "dependencies": {
+    "baileys": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
