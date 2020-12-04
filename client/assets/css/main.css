@@ -19,6 +19,15 @@
   align-items: center;
 }
 .spacer button{
-  width: 150px;
+  width: 160px;
   margin: 20px;
+}
+
+
+.cont .row{
+  margin-top: 25px;
+}
+
+.spacer-list {
+  padding-left: 40px;
 }

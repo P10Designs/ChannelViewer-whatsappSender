@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+var cors = require('cors')
 const { 
   logIn,
   sendTextMessage,
@@ -10,6 +11,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(morgan('tiny'))
+app.use(cors())
 
 
 // INITIATE WATSHAPP
@@ -44,6 +46,7 @@ app.post('/all', async (req,res) => {
 
 // JUST SEND LIVES
 app.post('/lives', async (req,res) => {
+  console.log(req.body);
   const lives = await live();
   var message = '';
   if(lives.length > -1){
@@ -51,7 +54,7 @@ app.post('/lives', async (req,res) => {
   Object.values(lives).forEach((live) => {
     message += `- ${live.title}\n${live.url.short}`;
   });
-  sendTextMessage(id, message);
+  //sendTextMessage(id, message);
   res.status(200);
   res.send('Messages were sent')
 })
